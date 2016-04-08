@@ -1,6 +1,9 @@
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
 #header{
 	background-color:#500000;
 	height:140px;
+	margin-top:12px;
 }
 
 #info{
@@ -21,6 +24,33 @@
     color:white;
     font-size:150%;
     margin-top:50px;
-    margin-right:60px; 
+    margin-right:160px; 
     float:right;
+}
+
+#footer{
+	background-color:#500000;
+	height:60px;
+	margin-top:300px;
+	margin-bottom: 12px;
+}
+
+.weblink:link {
+    text-decoration:none;
+    color:white;
+}
+
+.weblink:visited {
+    text-decoration:none;
+    color:#00CC00;
+}
+
+.weblink:hover {
+    text-decoration:underline;
+    color:#0066FF;
+}
+
+.weblink:active {
+    text-decoration:underline;
+    color:white;
 }

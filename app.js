@@ -4,13 +4,13 @@
 	angular
 	    .module('myApp',['ui.router'])
         .config(function($stateProvider, $urlRouterProvider){
-            $urlRouterProvider.otherwise('/app/child1');  
+            $urlRouterProvider.otherwise('/app/child');  
             $stateProvider
                 .state('app', {
                 url:'/app',
                 templateUrl:'pages/header.tpl.html'     
             }).state('app.child', {
-            url:'/child1',
+            url:'/child',
             templateUrl:'pages/child.html'
         });
        
