@@ -1,0 +1,26 @@
+#header{
+	background-color:#500000;
+	height:140px;
+}
+
+#info{
+	height:140px; 
+	background-color:white;
+	margin-left:70px;
+    color:#500000;
+ 
+}
+
+#thanks{
+    height:140px; 
+	background-color:#500000;
+	margin-left:85px;
+}
+
+#thankyou{
+    color:white;
+    font-size:150%;
+    margin-top:50px;
+    margin-right:60px; 
+    float:right;
+}
