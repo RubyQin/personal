@@ -12,8 +12,11 @@
             }).state('app.child', {
             url:'/child',
             templateUrl:'pages/child.html'
-        });
+            }).state('app.child.boxone',{
+            url:'/child/boxone',
+            templateUrl:'pages/boxone.html'
+            });
        
-    });
+        });
 })(); 
 

@@ -3,7 +3,7 @@
 #header{
 	background-color:#500000;
 	height:140px;
-	margin-top:12px;
+	margin-top:12px ;
 }
 
 #info{
@@ -31,26 +31,56 @@
 #footer{
 	background-color:#500000;
 	height:60px;
-	margin-top:300px;
-	margin-bottom: 12px;
+	margin-top:15px;
+	margin-bottom:15px;
 }
 
-.weblink:link {
+.weblink:link{
     text-decoration:none;
     color:white;
 }
 
-.weblink:visited {
+.weblink:visited{
     text-decoration:none;
     color:#00CC00;
 }
 
-.weblink:hover {
+.weblink:hover{
     text-decoration:underline;
     color:#0066FF;
 }
 
-.weblink:active {
+.weblink:active{
     text-decoration:underline;
     color:white;
+}
+
+.mylinks{
+	width:0;
+	height:0;
+	border-top: 100px solid #A00000;
+	border-right: 100px solid transparent;
+	float:left;
+	margin-right:10px;
+	margin-left:19px;
+	margin-top:15px;
+}
+
+.mylink:link{
+	background-color:#500000;
+}
+
+.mylinks:visited{
+	background-color:#FFFFFF ; 
+}
+
+.mylinks:hover{
+	background-color:#A00000;
+}
+
+#rightbar{
+	float:right;
+	height:444px;
+	margin-top:15px;
+	background-color:#A00000; 
 }
