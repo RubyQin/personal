@@ -1,43 +1,36 @@
-@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
-#header{
-	background-color:#500000;
+#headerone{
+	background-color:rgb(151,168,186);
 	height:140px;
 	margin-top:12px ;
 }
 
 #info{
 	height:140px; 
-	background-color:white;
-	margin-left:70px;
+	margin-top:12px;
+	margin-left:25px;
     color:#500000;
  
 }
 
-#thanks{
-    height:140px; 
-	background-color:#500000;
-	margin-left:85px;
-}
-
 #thankyou{
+	background-color:rgb(151,168,186); 
     color:white;
-    font-size:150%;
-    margin-top:50px;
-    margin-right:160px; 
-    float:right;
+    margin-top:12px;
+    height:140px; 
 }
 
 #footer{
-	background-color:#500000;
+	background:linear-gradient(to right, rgb(151,168,186), white);
 	height:60px;
-	margin-top:15px;
-	margin-bottom:15px;
+	position:relative;
+    top:15px;
+    margin-bottom:15px;
 }
 
 .weblink:link{
     text-decoration:none;
-    color:white;
+    color:#FFFFFF;
 }
 
 .weblink:visited{
@@ -58,29 +51,101 @@
 .mylinks{
 	width:0;
 	height:0;
-	border-top: 100px solid #A00000;
-	border-right: 100px solid transparent;
+	border-top: 100px solid rgb(47,37,100);
+	border-right: 100px solid rgb(58,61,142);
 	float:left;
-	margin-right:10px;
-	margin-left:19px;
+	margin-right:25px;
 	margin-top:15px;
 }
 
-.mylink:link{
-	background-color:#500000;
-}
-
-.mylinks:visited{
-	background-color:#FFFFFF ; 
-}
 
 .mylinks:hover{
-	background-color:#A00000;
+	border-right: 100px solid rgb(47,37,100);
 }
 
+.mylinkss{
+	width:0;
+	height:0;
+	border-top: 100px solid rgb(58,61,142);
+	border-right: 100px solid rgb(94,106,182);
+	float:left;
+	margin-right:25px;
+	margin-top:15px;
+}
+
+.mylinkss:hover{
+	border-right: 100px solid rgb(58,61,142);
+}
+
+.mylinksss{
+	width:0;
+	height:0;
+	border-top: 100px solid rgb(94,106,182);
+	border-right: 100px solid rgb(122,146,180);
+	float:left;
+	margin-right:25px;
+	margin-top:15px;
+}
+
+.mylinksss:hover{
+	border-right: 100px solid rgb(94,106,182);
+}
+
+.mylinkssss{
+	width:0;
+	height:0;
+	border-top: 100px solid rgb(122,146,180);
+	border-right: 100px solid rgb(151,168,186);
+	float:left;
+	margin-right:25px;
+	margin-top:15px;
+}
+
+.mylinkssss:hover{
+	border-right: 100px solid rgb(122,146,180);
+}
+
+.mylinksssss{
+	width:0;
+	height:0;
+	border-top: 100px solid rgb(151,168,186);
+	border-right: 100px solid rgb(219,228,225);
+	float:left;
+	margin-right:25px;
+	margin-top:15px;
+}
+
+.mylinksssss:hover{
+	border-right: 100px solid rgb(151,168,186);
+}
+
+.mylinkssssss{
+	width:0;
+	height:0;
+	border-top: 100px solid rgb(219,228,225);
+	border-right: 100px solid rgb(187,216,220);
+	float:left;
+	margin-right:25px;
+	margin-top:15px;
+}
+
+.mylinkssssss:hover{
+	border-right: 100px solid rgb(219,228,225);
+}
+
+
+
+
 #rightbar{
-	float:right;
+	float:left;
 	height:444px;
 	margin-top:15px;
-	background-color:#A00000; 
+	background-color:rgb(187,216,220); 
+}
+
+.pinbox{
+	position: absolute; 
+	left: 54px; 
+	top: 50px;
+	font-size: 125%;
 }

@@ -12,9 +12,12 @@
             }).state('app.child', {
             url:'/child',
             templateUrl:'pages/child.html'
-            }).state('app.child.boxone',{
-            url:'/child/boxone',
+            }).state('app.boxone',{
+            url:'/boxone',
             templateUrl:'pages/boxone.html'
+            }).state('app.boxtwo',{
+            url:'/boxtwo',
+            templateUrl:'pages/boxtwo.html'
             });
        
         });
