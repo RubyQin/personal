@@ -14,10 +14,9 @@
 
 		vm.data = Xmen;
 		vm.result = [];
-		//vm.selection = {};
-
-        
-        //vm.selection = vm.data.cast[0]; 
+		vm.selection = {};
+            
+        vm.selection = vm.data.cast[0]; 
 
     }
 })();

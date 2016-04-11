@@ -5,20 +5,22 @@
             XMEN            
         </h1>    
         <div class='col-xs-11 col-sm-11'>
-            <p> I put my XMEN small appication in one customized directive and I am using isolated scope to make sure that my directives will not mess up as I need to build multiple directives for different views. I hide the XMEN view when you just load the BOXTWO view. After you click 'explore XMEN' it will show up.</p>
+            <p> After you click 'Explore XMEN' you can see a view of a small application. This application is written with HTML5, CSS3, Bootstrap, JavaScript and AngularJS. I use factory to save the data, use ng-repeat, ng-model, ng-options to build the table and use filter to manipulate the result of the table.</p>
         </div>
     </div>
     <button type='button' class='btn btn-success' ng-click='vm.showXMENFun();'>Explore XMEN</button>
     <div class = 'container' ng-show='vm.showXmen'>
-        <div class='row'>
-            <p style='height: 40px; margin-top: 10px; border-radius: 5px; padding: 9px 6px;' class='col-xs-11 bg-success'> 
+        <div class='row' ng-show='vm.showXmen'>
+            <p style='height: 40px; margin-top: 10px; border-radius: 5px; padding: 9px 6px;' class='col-xs-10 bg-success'> 
                 <span>Want to save some time? Type the XMEN name you want!</span> 
             </p>
-        <input style='margin-top: 5px;' type= 'text' ng-model = 'search'>
         </div>
         <div class='row'>
-            <table id = 'tableXmen' class = 'table table-bordered table-hover col-xs-11'>
-                <tr style = 'background-color: #f2f2f2'>
+            <input type= 'text' class='col-xs-3' style='border: 1px solid #ccc; border-radius: 4px; height:35px;' ng-model='search'>
+        </div>
+        <div class='row' style='margin-top:15px;'>
+            <table class='table table-bordered table-hover'>
+                <tr style='background-color: #f2f2f2;'>
                     <td> Character </td><td> Code </td><td> Name</td>
                 </tr>
                 <tr ng-repeat = 'x in vm.result = (vm.data.cast|filter:search|orderBy:"character")'>
@@ -27,8 +29,29 @@
                     <td> {{x.name}} </td>
                 </tr>
             </table>
-            <div style='height: 40px; margin-top: 10px; border-radius: 5px; padding: 9px 6px;' ng-hide='vm.result.length != 0' class='bg-danger col-xs-11'>No XMEN available
-            </div>
+        </div>
+        <div class='row'>
+            <p style='height: 40px; border-radius: 5px; padding: 9px 6px;' ng-hide='vm.result.length != 0' class='bg-danger col-xs-10'>No XMEN available
+            </p>
+        </div>
+    </div>
+    <div class='container' ng-show='vm.showXmen'>
+        <div class='row'> 
+            <p class = 'bg-success col-xs-10' style='margin-top: 15px; height:40px; border-radius: 5px; padding: 9px 6px;'> 
+                <span>How XMEN look like</span> 
+            </p>
+            <table class='table table-bordered table-hover' style='margin-top: 15px;'>
+                    <tr style='background-color: #f2f2f2;'>
+                        <td> Code </td><td> Name </td><td> Image </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select ng-model="vm.selection" ng-options='x.code for x in vm.data.cast'></select>
+                        </td>
+                        <td>{{vm.selection.name}}</td>
+                        <td><img style='height: 240px; width: 190px;' ng-src='{{vm.selection.img}}'/></td>
+                    </tr>
+            </table>
         </div>
     </div>
 </div>

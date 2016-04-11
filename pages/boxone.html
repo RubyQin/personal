@@ -1,3 +1,25 @@
-<div>
-	<h1>boxone</h1>
+<div class='container' ng-controller='boxOneCtrl as vm'>
+    <div class='row'>
+        <h1 class='col-xs-11 col-sm-11' style='color:rgb(47,37,100);'>
+            Ruby's Resume            
+        </h1>    
+        <div class='col-xs-11 col-sm-11'>
+            <p> Thanks for feeling interesting. Want to know more about me? Please do not hesitate to click 'Explore Ruby's Resume'!<b>Thanks for reading~</b></p>
+        </div>
+        <button type='button' class='btn btn-success' ng-click='vm.showresumediv()'>Explore Ruby's Resume</button>
+	<div class='row' ng-show='vm.showresume'>
+	    <div style='margin-left:30%;'>
+	        <ul style='list-style:none;' ng-repeat='pic in vm.data.images'>
+	            <li style='float:left; padding-right:30px;'>
+	                <a href='' id='resumelink' ng-click='vm.showoneresume($index)'>
+	                    <img style='width:80px; height:100px; border:5px solid rgb(47,37,100); border-radius:5px;' ng-src='{{pic.img}}'>
+                        <br><span style='margin-left:40px'>{{pic.number}}</span>
+                    </a>
+	            </li>
+	        </ul>
+	    </div>
+	    <div>
+	        <div style='margin-left:11%'><img style='border:5px solid rgb(47,37,100); border-radius:5px;' ng-src='{{vm.selected}}'/></div>
+	    </div>
+	</div>
 </div>
