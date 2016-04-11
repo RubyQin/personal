@@ -143,9 +143,31 @@
 	background-color:rgb(187,216,220); 
 }
 
-.pinbox{
-	position: absolute; 
-	left: 54px; 
-	top: 50px;
+.twowords{
+	position: relative; 
+	left:26px; 
+	top: -70px;
 	font-size: 125%;
+	color:white;
+}
+
+.oneword{
+	position: relative; 
+	left:26px; 
+	top: -60px;
+	font-size: 125%;
+	color:white;
+}
+
+h1{
+	margin-top:15px; 
+	background:linear-gradient(to right, white, rgb(94,106,182));
+	border:2px;
+    border-radius:20px;
+    height:70px;
+    padding-top:18px;
+}
+
+.tableXmen{
+	padding-top:30px;
 }
