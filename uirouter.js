@@ -18,6 +18,9 @@
             }).state('app.boxtwo',{
             url:'/boxtwo',
             templateUrl:'pages/boxtwo.html'
+            }).state('app.boxthree',{
+            url:'/boxthree',
+            templateUrl:'pages/boxthree.html'
             });
        
         });

@@ -1,0 +1,30 @@
+<div class='container' style='margin-top:15px;' ng-show='showDiv'>
+	<div class='row'>
+	    <div class='col-xs-11'>
+	        <table class='table table-bordered table-hover' style='margin-top: 15px;'>
+	            <tr style='background-color: #f2f2f2;'>
+	                <td>Theater Name</td><td>Movie Name (Click names to see show time!)</td>
+	            </tr>
+	            <tr ng-repeat='theater in movieData'>
+	                <td><b>{{theater.name}}</b></td>
+	                <td>
+	                    <ul ng-repeat='movie in theater.movies' style='list-style:none;'>
+	        			    <li>
+	        			        <a href='' ng-click='showtime=!showtime' style='color:rgb(210,185,56);'>{{movie.name}}</a>
+	        			        <a ng-href='{{movie.imdb}}' target='_blank' style='float:right;'><img id='imdb' ng-src='img/boxthree/imdb.png'/></a>
+	        			    </li>
+	        			    <div ng-show='showtime'>
+	        			        <ul style='list-style:none;'ng-repeat='time in movie.showtimes'>
+	        			            <li style='float:left; padding-right:5px;'>{{time}}
+                                        <span style='padding-left:5px;'>|</span>
+	        			            </li>
+	        			        </ul>
+	        			        <br><br>
+	        			    </div>
+	        		    </ul>
+	        		</td>
+	            </tr>	        	
+	        </table>
+	    </div>
+	</div>
+</div>

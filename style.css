@@ -175,3 +175,9 @@ h1{
 #resumelink:hover{
     text-decoration:none;
 } 
+
+#imdb{
+	width:50px;
+	height:20px;
+	margin-right:60px;
+}
