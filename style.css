@@ -181,3 +181,15 @@ h1{
 	height:20px;
 	margin-right:60px;
 }
+
+.moviewrap{
+    border: 1px solid #00CCFF;
+    border-radius: 10px;
+    margin-top:15px;
+}
+
+#tmdb{
+    float:left;
+    width:20%;
+    margin-top:15px;
+}

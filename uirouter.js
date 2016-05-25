@@ -21,8 +21,10 @@
             }).state('app.boxthree',{
             url:'/boxthree',
             templateUrl:'pages/boxthree.html'
+            }).state('app.boxfour',{
+            url:'/boxfour',
+            templateUrl:'pages/boxfour.html'
             });
        
         });
 })(); 
-

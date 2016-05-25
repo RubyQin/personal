@@ -1,0 +1,41 @@
+<div class='container' ng-controller='boxFourCtrl as vm'>
+    <div class='row'>
+        <div class='col-xs-11 moviewrap'>
+            <div class="form-group col-xs-8">
+                <label style='margin-top:15px;'>Search movies you like</label>
+                <input type="text" class="form-control" ng-model='vm.mname' style='margin-top:15px;'>
+                <button type="button" class="btn btn-info" style='margin-top:15px;float:left;' ng-click='vm.showResult()'>Search</button>
+                <span><img src='/img/tmdb.png' id='tmdb'></span>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-xs-11 moviewrap' ng-show='vm.showSecondDiv'>
+            <label style='margin-top:15px;'>{{vm.mname}}</label>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Poster</th>
+                        <th>OverView</th>
+                        <th>Release Date</th>
+                        <td>Vote</td>
+                        <td>Rate(out of 10)</td>
+                        <td>Languate</td>
+                    </tr>
+                </thead>
+                <tbody ng-repeat = 'x in vm.movieData'>
+                    <tr>
+                        <td><img ng-src={{'https://image.tmdb.org/t/p/w185'+x.poster_path}}><br>{{x.original_title}}</td>
+                        <td>{{x.overview}}</td>
+                        <td>{{x.release_date}}</td>
+                        <td>{{x.vote_count}}</td>
+                        <td>{{x.vote_average}}</td>
+                        <td>{{x.original_language}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+    
